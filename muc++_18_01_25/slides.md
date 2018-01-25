@@ -28,7 +28,7 @@ class: center, middle
 
  * Single core performance hard to improve
 
-    * Scaling the frequence unfeasible
+    * Scaling the frequency unfeasible
     * Increasing complexity not viable
 
 &rArr; Instead of making a single core faster, just add more cores
@@ -37,17 +37,6 @@ class: center, middle
 
 ## Why Parallelism?
 ### It's everywhere!
-
- * Microcontroller
-
----
-
-## Why Parallelism?
-### It's everywhere!
-
- * .strike[Microcontroller]
-
---
 
  * Embedded Devices
 
@@ -70,7 +59,11 @@ class: center, middle
 
 --
 
- * Servers
+ * Server systems
+
+--
+
+ * Accelerators (GPUs, DSPs, ...)
 
 ---
 
@@ -214,7 +207,7 @@ class: center, middle
  * Includes Memory ordering:
 
     * A happens before B
-    * Avoids reording of instructions
+    * Avoids reordering of instructions
 
 ---
 ## `#include <thread>`
@@ -222,15 +215,16 @@ class: center, middle
 
  * Thread of Execution:
 
-       "A thread of execution is a sequence of instructions that can be executed concurrently with other such sequences in multithreading environments, while sharing a same address space."
+       "A thread of execution is a sequence of instructions that can be executed concurrently with other such sequences in multi-threading environments, while sharing a same address space."
 
        &rArr; `std::thread`
 
-  * Synchronization primitives (`<mutex>` and `<condition_variable>`):
-    * `std::mutex`
-    * `std::condition_variable`/`std::condition_variable_any`
-    * `std::lock_guard`
-    * `std::unique_lock`
+ * Synchronization primitives (`<mutex>` and `<condition_variable>`):
+
+  * `std::mutex`
+  * `std::condition_variable`/`std::condition_variable_any`
+  * `std::lock_guard`
+  * `std::unique_lock`
 
 ---
 
@@ -298,7 +292,7 @@ How could we do better?
 
 ---
 
-## `include <future>`
+## `#include <future>`
 ### Back to the future...
 
  * Asynchronous Result helper
@@ -311,20 +305,20 @@ using namespace std;
 template <typename T>
 struct shared_state
 {
-  union {
-    T value;
-    exception_ptr exception_;
-  } data;
-  mutex mutex;
-  condition_variable cv;
-  enum state { empty, value, exception };
-  state s;
+    union {
+        T value;
+        exception_ptr exception;
+    } data;
+    mutex mutex;
+    condition_variable cv;
+    enum state { empty, value, exception };
+    state s;
 };
 ```
 
 ---
 
-## `include <future>`
+## `#include <future>`
 ### Back to the future...
 
 .left-column[
@@ -333,10 +327,12 @@ Producer:
 template <typename T>
 void set_value(T&& t)
 {
-  unique_lock<mutex> l(mtx);
-  data.value = forward<T>(t);
-  s = value;
-  cv.notify_all();
+    {
+        unique_lock<mutex> l(mtx);
+        data.value = forward<T>(t);
+        s = value;
+    }
+    cv.notify_all();
 }
 ```
 ]
@@ -349,6 +345,8 @@ T get_value()
     while (s == empty)
         cv.wait(l);
 
+    if (s == exception)
+      rethrow_exception(data.exception);
     return data.value;
 }
 ```
@@ -356,7 +354,7 @@ T get_value()
 
 ---
 
-## `include <future>`
+## `#include <future>`
 ### Back to the future...
 
  * Producers:
@@ -440,10 +438,28 @@ future<void> restaurant()
 
   * Solutions
 
-    * Threadpool of function objects?
+    * Thread-pool of function objects?
 
 --
-      Can you garuantee forward progress?
+      Can you guarantee forward progress?
+
+---
+
+
+## Overheads
+### Modeling with the USL
+
+<iframe src="https://www.desmos.com/calculator/svtwiefz7k" width="90%" height="80%" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+---
+
+.left-column[
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Dear HPX: How? <a href="https://t.co/12u1n8bBdi">pic.twitter.com/12u1n8bBdi</a></p>&mdash; Billy O&#39;Neal (@MalwareMinigun) <a href="https://twitter.com/MalwareMinigun/status/880299153493970945?ref_src=twsrc%5Etfw">June 29, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+]
+.right-column[
+![tweet](images/tweet-2.png)
+]
 
 ---
 
@@ -460,8 +476,6 @@ future<void> restaurant()
 * Developed to run at any scale
 * Compliant C++ Standard implementation (and more)
 * Open Source: Published under the Boost Software License
-
----
 
 ---
 
