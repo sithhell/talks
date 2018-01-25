@@ -5,7 +5,7 @@
         <title></title>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <script src="./js/remark-latest.min.js"></script>
-        <script src="./js/jquery-3.1.0.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
     </head>
     <body>
         <script>
@@ -22,10 +22,7 @@
                 {
                     var stellar = "<img src=\"./stellar.svg\" class=\"logo-img\"></img>";
                     var fau = "<img src=\"./fau-logo-tech.png\" class=\"logo-img-fau\"></img>";
-                    var cscs = "<img src=\"./CSCS_2_CMYK.jpg\" class=\"logo-img-cscs\"></img>";
-                    var ethz = "<img src=\"./eth_logo_kurz_pos.jpg\" class=\"logo-img-ethz\"></img>";
-                    var lsu  = "<img src=\"./lsu_purple.png\" class=\"logo-img-lsu\"></img>";
-                    var logo = $("<div class=\"logo\">" + stellar + fau + cscs + ethz + lsu + "</div>")
+                    var logo = $("<div class=\"logo\">" + stellar + fau + "</div>")
                     $("div.remark-slide-content").append(logo);
                 }
             });
