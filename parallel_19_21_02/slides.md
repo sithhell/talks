@@ -230,7 +230,7 @@ T get_value()
 ## Pitfalls
 ### Dealing with Hardware Complexity
 
- * Example (provided by [packet.net](https://packet.net)):
+ * Example (provided by [packet.com](https://packet.com)):
 
     * 2x Intel Xeon 6128 (Skylake-EP)
 --
