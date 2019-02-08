@@ -384,7 +384,7 @@ T get_value()
 ## The future on fibers
 ### Unleashing the power
 
-* Implement future on top of fiber primitives & executio resources
+* Implement future on top of fiber primitives & execution resources
 
 * Implement support to attach continuations
 
