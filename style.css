@@ -55,6 +55,31 @@ tbody tr:last-child td {
     padding: 0px;
 }
 
+
+.middletext-float {
+    position: fixed;
+    left: 10pt;
+    top: 0pt;
+    bottom: 20pt;
+    width: 90%;
+    height: 90%;
+    margin: 0px;
+    padding-bottom: 130pt;
+    padding-top: 40pt;
+    padding-left: 30pt;
+    padding-right: 100pt;
+    z-index: 10;
+}
+.above {
+    position: relative;
+    z-index: 100;
+    width: 120%;
+}
+.above2 {
+    position: relative;
+    z-index: 90;
+}
+
 .strike {
     text-decoration: line-through;
 }
