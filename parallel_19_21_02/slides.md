@@ -241,12 +241,16 @@ T get_value()
 <img src="topo-big.svg" alt="Machine Topology" width="100%">
 
 ---
-
 ## Pitfalls
 ### Dealing with Hardware Complexity
 
 <img src="topo-big.svg" alt="Machine Topology" class="middletext-float">
---
+
+---
+## Pitfalls
+### Dealing with Hardware Complexity
+
+<img src="topo-big2.svg" alt="Machine Topology" class="middletext-float">
 .left-column[
 <img src="topo-cpu.svg" alt="Machine Topology CPU Zoom" width="100%" class="above">
 ]
