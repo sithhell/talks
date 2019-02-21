@@ -232,7 +232,7 @@ T get_value()
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ]
 .right-column[
-![tweet](images/tweet-2.png)
+![tweet](tweet-2.png)
 ]
 
 ---
