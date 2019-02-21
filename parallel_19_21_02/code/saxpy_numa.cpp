@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
 
     options_description desc_commandline;
     desc_commandline.add_options()
-        ("N", value<std::size_t>()->default_value(1024),
+        ("N", value<std::size_t>()->default_value(1024 * 1024),
          "Number of Elements")
         ("steps", value<std::size_t>()->default_value(100),
          "Number of steps to apply the stencil")
