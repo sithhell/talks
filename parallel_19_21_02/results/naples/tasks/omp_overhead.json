@@ -1,0 +1,51 @@
+{
+  "context": {
+    "date": "2019-02-21 10:03:24",
+    "num_cpus": 48,
+    "mhz_per_cpu": 2794,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 64000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 512000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 8192000000,
+        "num_sharing": 6
+      }
+    ],
+    "library_build_type": "release"
+  },
+  "benchmarks": [
+    {
+      "name": "function_call_overhead/real_time",
+      "iterations": 355517908,
+      "real_time": 1.7891497887634924e+00,
+      "cpu_time": 1.7890944019618837e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_overhead/real_time",
+      "iterations": 62589125,
+      "real_time": 1.1126899025986322e+01,
+      "cpu_time": 1.1126732783051368e+01,
+      "time_unit": "ns"
+    }
+  ]
+}

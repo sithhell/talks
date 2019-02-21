@@ -1,0 +1,72 @@
+{
+  "context": {
+    "date": "2019-02-21 10:03:09",
+    "num_cpus": 48,
+    "mhz_per_cpu": 2787,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 64000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 512000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 8192000000,
+        "num_sharing": 6
+      }
+    ],
+    "library_build_type": "release"
+  },
+  "benchmarks": [
+    {
+      "name": "function_call_overhead/real_time",
+      "iterations": 355513450,
+      "real_time": 1.7614115752867663e+00,
+      "cpu_time": 1.7613978655378584e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "coroutines_create_overhead/real_time",
+      "iterations": 242933,
+      "real_time": 2.9108593274685977e+03,
+      "cpu_time": 2.9108220126536939e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "coroutines_create_reuse_overhead/real_time",
+      "iterations": 7547791,
+      "real_time": 9.2704520037701002e+01,
+      "cpu_time": 9.2703799429528502e+01,
+      "time_unit": "ns"
+    },
+    {
+      "name": "coroutines_call_overhead/real_time",
+      "iterations": 5001152,
+      "real_time": 1.3860065820832719e+02,
+      "cpu_time": 1.3859641218663216e+02,
+      "time_unit": "ns"
+    },
+    {
+      "name": "coroutines_overhead/real_time",
+      "iterations": 232725,
+      "real_time": 3.0094865613927968e+03,
+      "cpu_time": 3.0093698442367590e+03,
+      "time_unit": "ns"
+    }
+  ]
+}

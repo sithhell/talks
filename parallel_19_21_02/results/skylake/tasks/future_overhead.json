@@ -1,0 +1,114 @@
+{
+  "context": {
+    "date": "2019-02-21 08:42:15",
+    "num_cpus": 48,
+    "mhz_per_cpu": 2601,
+    "cpu_scaling_enabled": true,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 1024000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 19712000000,
+        "num_sharing": 24
+      }
+    ],
+    "library_build_type": "release"
+  },
+  "benchmarks": [
+    {
+      "name": "int_overhead/real_time",
+      "iterations": 1000000000,
+      "real_time": 2.7140580800005409e-01,
+      "cpu_time": 2.7115053900000002e-01,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_make_ready_void_overhead/real_time",
+      "iterations": 14487254,
+      "real_time": 4.8289026892197292e+01,
+      "cpu_time": 4.8269280154817459e+01,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_make_ready_overhead/real_time",
+      "iterations": 14277369,
+      "real_time": 5.0502430594882696e+01,
+      "cpu_time": 5.0481215481647915e+01,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_promise_void_overhead/real_time",
+      "iterations": 9945956,
+      "real_time": 7.0226582743776845e+01,
+      "cpu_time": 7.0198049237298036e+01,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_promise_overhead/real_time",
+      "iterations": 8711964,
+      "real_time": 8.0392831283507704e+01,
+      "cpu_time": 8.0361110537187756e+01,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_async_void_overhead/real_time",
+      "iterations": 256744,
+      "real_time": 2.7276626250269474e+03,
+      "cpu_time": 2.7265438997600727e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_async_int_overhead/real_time",
+      "iterations": 254242,
+      "real_time": 2.7446720880107973e+03,
+      "cpu_time": 2.7435785432776656e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_promise_void_overhead/real_time",
+      "iterations": 2256397,
+      "real_time": 3.0994798255806273e+02,
+      "cpu_time": 3.0982544428130325e+02,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_promise_overhead/real_time",
+      "iterations": 2253786,
+      "real_time": 3.1039560100204091e+02,
+      "cpu_time": 3.1026695746623699e+02,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_async_void_overhead/real_time",
+      "iterations": 55997,
+      "real_time": 1.3007855152955086e+04,
+      "cpu_time": 5.7320513777523884e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_async_int_overhead/real_time",
+      "iterations": 54527,
+      "real_time": 1.2832850202651283e+04,
+      "cpu_time": 5.5776042877840246e+03,
+      "time_unit": "ns"
+    }
+  ]
+}

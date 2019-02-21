@@ -1,0 +1,233 @@
+{
+  "context": {
+    "date": "2019-02-21 08:53:02",
+    "num_cpus": 48,
+    "mhz_per_cpu": 2601,
+    "cpu_scaling_enabled": true,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 1024000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 19712000000,
+        "num_sharing": 24
+      }
+    ],
+    "library_build_type": "release"
+  },
+  "benchmarks": [
+    {
+      "name": "hpx_homogeneous_seq/1/0/real_time",
+      "iterations": 69503,
+      "real_time": 8.0402079190804288e+03,
+      "cpu_time": 8.0365921183258297e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/10/0/real_time",
+      "iterations": 26130,
+      "real_time": 2.5590986681978447e+04,
+      "cpu_time": 2.5035528205128205e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/100/0/real_time",
+      "iterations": 4890,
+      "real_time": 1.4155829161551633e+05,
+      "cpu_time": 1.3211885071574638e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1000/0/real_time",
+      "iterations": 565,
+      "real_time": 1.1885658194689185e+06,
+      "cpu_time": 9.1014682123893825e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1/1/real_time",
+      "iterations": 101673,
+      "real_time": 6.6844718951932427e+03,
+      "cpu_time": 6.7666774463230167e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/10/1/real_time",
+      "iterations": 38947,
+      "real_time": 1.6236772845149093e+04,
+      "cpu_time": 1.7033959303669079e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/100/1/real_time",
+      "iterations": 5224,
+      "real_time": 1.3722440065086295e+05,
+      "cpu_time": 1.3091465543644717e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1000/1/real_time",
+      "iterations": 620,
+      "real_time": 1.1467925612904646e+06,
+      "cpu_time": 8.8497973709677404e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1/10/real_time",
+      "iterations": 99659,
+      "real_time": 6.9142829147377433e+03,
+      "cpu_time": 6.9131596945584415e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/10/10/real_time",
+      "iterations": 39624,
+      "real_time": 1.5967181178073239e+04,
+      "cpu_time": 1.6462058298001230e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/100/10/real_time",
+      "iterations": 5100,
+      "real_time": 1.3902425117646321e+05,
+      "cpu_time": 1.3266473686274505e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1000/10/real_time",
+      "iterations": 613,
+      "real_time": 1.1748326101142187e+06,
+      "cpu_time": 8.8181064926590677e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1/100/real_time",
+      "iterations": 101694,
+      "real_time": 6.8154424843160523e+03,
+      "cpu_time": 7.1101937675772506e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/10/100/real_time",
+      "iterations": 39511,
+      "real_time": 1.6024811520843336e+04,
+      "cpu_time": 1.5908318291108821e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/100/100/real_time",
+      "iterations": 5200,
+      "real_time": 1.3700823230771255e+05,
+      "cpu_time": 1.1738389173076919e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1000/100/real_time",
+      "iterations": 625,
+      "real_time": 1.1735425487997418e+06,
+      "cpu_time": 7.0911711040000117e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1/1000/real_time",
+      "iterations": 87805,
+      "real_time": 7.9091462331314879e+03,
+      "cpu_time": 8.2162304652354651e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/10/1000/real_time",
+      "iterations": 37529,
+      "real_time": 1.6787616136851088e+04,
+      "cpu_time": 1.9637778811052754e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/100/1000/real_time",
+      "iterations": 5451,
+      "real_time": 1.3153568611262980e+05,
+      "cpu_time": 1.3196746596954690e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1000/1000/real_time",
+      "iterations": 601,
+      "real_time": 1.2606427071546211e+06,
+      "cpu_time": 7.0248789184692351e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1/10000/real_time",
+      "iterations": 41202,
+      "real_time": 1.6866911460606891e+04,
+      "cpu_time": 1.7180165744381346e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/10/10000/real_time",
+      "iterations": 22585,
+      "real_time": 3.0616910073060084e+04,
+      "cpu_time": 3.0478607881337153e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/100/10000/real_time",
+      "iterations": 5809,
+      "real_time": 1.2081199242551022e+05,
+      "cpu_time": 1.1913754260630054e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1000/10000/real_time",
+      "iterations": 667,
+      "real_time": 1.0490065277363742e+06,
+      "cpu_time": 1.0326184677661194e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1/100000/real_time",
+      "iterations": 6596,
+      "real_time": 1.0641562522740477e+05,
+      "cpu_time": 1.2482421300788375e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/10/100000/real_time",
+      "iterations": 3326,
+      "real_time": 2.1012334515937147e+05,
+      "cpu_time": 1.8593096632591728e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/100/100000/real_time",
+      "iterations": 760,
+      "real_time": 9.2151309605248191e+05,
+      "cpu_time": 9.7640480131578841e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "hpx_homogeneous_seq/1000/100000/real_time",
+      "iterations": 81,
+      "real_time": 8.5993318765433263e+06,
+      "cpu_time": 8.2591791975308685e+06,
+      "time_unit": "ns"
+    }
+  ]
+}

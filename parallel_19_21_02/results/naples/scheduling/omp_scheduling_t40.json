@@ -1,0 +1,429 @@
+{
+  "context": {
+    "date": "2019-02-21 10:40:27",
+    "num_cpus": 48,
+    "mhz_per_cpu": 2801,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 64000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 512000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 8192000000,
+        "num_sharing": 6
+      }
+    ],
+    "library_build_type": "release"
+  },
+  "benchmarks": [
+    {
+      "name": "omp_homogeneous_seq/1/0/real_time",
+      "iterations": 24746,
+      "real_time": 2.8741931989002125e+04,
+      "cpu_time": 2.8741449850480880e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/10/0/real_time",
+      "iterations": 8114,
+      "real_time": 8.9173334113864330e+04,
+      "cpu_time": 8.9170428888341135e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/100/0/real_time",
+      "iterations": 1112,
+      "real_time": 6.1176398111515248e+05,
+      "cpu_time": 6.1173429496402864e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1000/0/real_time",
+      "iterations": 150,
+      "real_time": 5.0414484333365792e+06,
+      "cpu_time": 5.0412027533333311e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1/1/real_time",
+      "iterations": 23086,
+      "real_time": 3.0209748548893909e+04,
+      "cpu_time": 3.0209081434635689e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/10/1/real_time",
+      "iterations": 7748,
+      "real_time": 8.9032480898293841e+04,
+      "cpu_time": 8.8979880227155401e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/100/1/real_time",
+      "iterations": 1152,
+      "real_time": 6.1216881076357292e+05,
+      "cpu_time": 6.1214403993055550e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1000/1/real_time",
+      "iterations": 100,
+      "real_time": 5.0412708499970911e+06,
+      "cpu_time": 5.0411550100000026e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1/10/real_time",
+      "iterations": 23159,
+      "real_time": 3.0300192106761453e+04,
+      "cpu_time": 3.0299647048663632e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/10/10/real_time",
+      "iterations": 7767,
+      "real_time": 8.9375548088044801e+04,
+      "cpu_time": 8.9373236384704476e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/100/10/real_time",
+      "iterations": 1120,
+      "real_time": 6.2643645982153167e+05,
+      "cpu_time": 6.2610162857142929e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1000/10/real_time",
+      "iterations": 134,
+      "real_time": 5.1245189850699566e+06,
+      "cpu_time": 5.1243872238806011e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1/100/real_time",
+      "iterations": 22950,
+      "real_time": 3.0485055206976587e+04,
+      "cpu_time": 3.0483822483660104e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/10/100/real_time",
+      "iterations": 7837,
+      "real_time": 8.9755532219000816e+04,
+      "cpu_time": 8.9753262855684530e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/100/100/real_time",
+      "iterations": 1212,
+      "real_time": 5.7841412211232015e+05,
+      "cpu_time": 5.7840332755775575e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1000/100/real_time",
+      "iterations": 183,
+      "real_time": 3.8215149781406512e+06,
+      "cpu_time": 3.8213648797814180e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1/1000/real_time",
+      "iterations": 22959,
+      "real_time": 3.0445220959085087e+04,
+      "cpu_time": 3.0444578204625632e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/10/1000/real_time",
+      "iterations": 7969,
+      "real_time": 8.8526704479849373e+04,
+      "cpu_time": 8.8525013678002302e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/100/1000/real_time",
+      "iterations": 1112,
+      "real_time": 6.3556798021646321e+05,
+      "cpu_time": 6.3554821492805472e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1000/1000/real_time",
+      "iterations": 120,
+      "real_time": 5.9876743250015350e+06,
+      "cpu_time": 5.9874991333333403e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1/10000/real_time",
+      "iterations": 22404,
+      "real_time": 3.1259026156040964e+04,
+      "cpu_time": 3.1258756114979573e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/10/10000/real_time",
+      "iterations": 9300,
+      "real_time": 7.4714244516163948e+04,
+      "cpu_time": 7.4710754193548171e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/100/10000/real_time",
+      "iterations": 1597,
+      "real_time": 4.4524472448320326e+05,
+      "cpu_time": 4.4518653350031399e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1000/10000/real_time",
+      "iterations": 185,
+      "real_time": 3.7613049513507774e+06,
+      "cpu_time": 3.7607040162162157e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1/100000/real_time",
+      "iterations": 6027,
+      "real_time": 1.1610535988054139e+05,
+      "cpu_time": 1.1610206819313117e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/10/100000/real_time",
+      "iterations": 4568,
+      "real_time": 1.5303712718900380e+05,
+      "cpu_time": 1.5303370030647979e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/100/100000/real_time",
+      "iterations": 1424,
+      "real_time": 4.9060649438183894e+05,
+      "cpu_time": 4.9052814115168533e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_seq/1000/100000/real_time",
+      "iterations": 184,
+      "real_time": 3.8876006358696432e+06,
+      "cpu_time": 3.8860148586956440e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1/0/real_time",
+      "iterations": 38804,
+      "real_time": 1.8028769070194634e+04,
+      "cpu_time": 1.8028571358622838e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/10/0/real_time",
+      "iterations": 38678,
+      "real_time": 1.8102378096061246e+04,
+      "cpu_time": 1.8102056285226765e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/100/0/real_time",
+      "iterations": 38820,
+      "real_time": 1.8042826558480887e+04,
+      "cpu_time": 1.8042418418341076e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1000/0/real_time",
+      "iterations": 35232,
+      "real_time": 1.9877039310871860e+04,
+      "cpu_time": 1.9876596474795642e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1/1/real_time",
+      "iterations": 38747,
+      "real_time": 1.8065692879443464e+04,
+      "cpu_time": 1.8065411567347121e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/10/1/real_time",
+      "iterations": 38707,
+      "real_time": 2.4639320329661772e+04,
+      "cpu_time": 2.4237269382798917e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/100/1/real_time",
+      "iterations": 38389,
+      "real_time": 1.8470520044814119e+04,
+      "cpu_time": 1.8470384120451206e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1000/1/real_time",
+      "iterations": 34653,
+      "real_time": 2.0193216922062540e+04,
+      "cpu_time": 2.0193058061350948e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1/10/real_time",
+      "iterations": 38404,
+      "real_time": 1.8229303562124449e+04,
+      "cpu_time": 1.8229140323924446e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/10/10/real_time",
+      "iterations": 38166,
+      "real_time": 1.8348896085505134e+04,
+      "cpu_time": 1.8348663312896399e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/100/10/real_time",
+      "iterations": 37824,
+      "real_time": 1.8455527760147521e+04,
+      "cpu_time": 1.8455363578680266e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1000/10/real_time",
+      "iterations": 34635,
+      "real_time": 2.0186635195620347e+04,
+      "cpu_time": 2.0186247928396140e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1/100/real_time",
+      "iterations": 38301,
+      "real_time": 1.8287038458520761e+04,
+      "cpu_time": 1.8286768831100944e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/10/100/real_time",
+      "iterations": 38031,
+      "real_time": 1.8469662748823543e+04,
+      "cpu_time": 1.8469311719386827e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/100/100/real_time",
+      "iterations": 37125,
+      "real_time": 1.8868753912444939e+04,
+      "cpu_time": 1.8868404255892361e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1000/100/real_time",
+      "iterations": 30146,
+      "real_time": 2.3211359483843797e+04,
+      "cpu_time": 2.3211013832681030e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1/1000/real_time",
+      "iterations": 38011,
+      "real_time": 1.8437388203417049e+04,
+      "cpu_time": 1.8437225881981562e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/10/1000/real_time",
+      "iterations": 36842,
+      "real_time": 1.8984023342931345e+04,
+      "cpu_time": 1.8983854568156006e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/100/1000/real_time",
+      "iterations": 32666,
+      "real_time": 2.1452179238362591e+04,
+      "cpu_time": 2.1451993785587470e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1000/1000/real_time",
+      "iterations": 15377,
+      "real_time": 4.5468310398673064e+04,
+      "cpu_time": 4.5467938089354007e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1/10000/real_time",
+      "iterations": 25736,
+      "real_time": 2.7207301833987578e+04,
+      "cpu_time": 2.7206680836182542e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/10/10000/real_time",
+      "iterations": 25189,
+      "real_time": 2.7806517011384421e+04,
+      "cpu_time": 2.7806071459764000e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/100/10000/real_time",
+      "iterations": 14532,
+      "real_time": 4.8162488576943586e+04,
+      "cpu_time": 4.8162058560418402e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1000/10000/real_time",
+      "iterations": 2586,
+      "real_time": 2.7071046171695960e+05,
+      "cpu_time": 2.7070806883217336e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1/100000/real_time",
+      "iterations": 5968,
+      "real_time": 1.1727743800267353e+05,
+      "cpu_time": 1.1727639946380648e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/10/100000/real_time",
+      "iterations": 5930,
+      "real_time": 1.1806662563237832e+05,
+      "cpu_time": 1.1806405986509251e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/100/100000/real_time",
+      "iterations": 2198,
+      "real_time": 3.1846365013680817e+05,
+      "cpu_time": 3.1845871565059095e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "omp_homogeneous_for/1000/100000/real_time",
+      "iterations": 278,
+      "real_time": 2.6197408489201572e+06,
+      "cpu_time": 2.5525404388489192e+06,
+      "time_unit": "ns"
+    }
+  ]
+}

@@ -337,7 +337,7 @@ T get_value()
 
     &rArr; High-Level abstraction to exploit Low-Level hardware details
 
-* [Demo Code](code/allocator.cpp)
+* [Demo](code/saxpy.cpp) [Code](code/saxpy_numa.cpp)
 
 ---
 ## Reducing Overheads
@@ -348,8 +348,6 @@ T get_value()
 * Use queues to store pending tasks
 
 * Scalable to millions of parallel tasks
-
-* [Demo Code](code/pool.cpp)
 
 --
 
@@ -375,13 +373,42 @@ T get_value()
 
 * Forward progress guarantee*
 
-* [Demo Code](code/fiber.cpp)
+* [Demo Code](code/tasks.cpp)
 
 --
 
 * Drawback:
 
     * More expensive
+
+---
+## Reducing Overheads
+
+<img src="figures/task_overhead.svg" alt="Task Overhead" class="middletext-float">
+
+---
+## Reducing Overheads
+
+<img src="figures/task_overhead_zoom.svg" alt="Task Overhead" class="middletext-float">
+
+---
+## Reducing Overheads
+
+<img src="figures/future_overhead1.svg" alt="Future Overhead" class="middletext-float">
+
+---
+## Reducing Overheads
+
+<img src="figures/future_overhead2.svg" alt="Future Overhead" class="middletext-float">
+
+---
+## Reducing Overheads
+
+<img src="figures/scheduling_heat_skylake.svg" alt="Scheduling Skylake" class="middletext-float">
+
+---
+## Reducing Overheads
+<img src="figures/scheduling_heat_naples.svg" alt="Scheduling Naples" class="middletext-float">
 
 ---
 

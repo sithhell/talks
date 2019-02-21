@@ -1,0 +1,233 @@
+{
+  "context": {
+    "date": "2019-02-21 08:50:57",
+    "num_cpus": 48,
+    "mhz_per_cpu": 2601,
+    "cpu_scaling_enabled": true,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 1024000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 19712000000,
+        "num_sharing": 24
+      }
+    ],
+    "library_build_type": "release"
+  },
+  "benchmarks": [
+    {
+      "name": "std_homogeneous_seq/1/0/real_time",
+      "iterations": 10419,
+      "real_time": 7.6528107591918000e+04,
+      "cpu_time": 3.8172849121796717e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/10/0/real_time",
+      "iterations": 1252,
+      "real_time": 6.0368992172515136e+05,
+      "cpu_time": 5.2621288578274753e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/100/0/real_time",
+      "iterations": 104,
+      "real_time": 6.7288138365379032e+06,
+      "cpu_time": 6.0779685096153831e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1000/0/real_time",
+      "iterations": 10,
+      "real_time": 6.6721015500002064e+07,
+      "cpu_time": 6.1153172600000001e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1/1/real_time",
+      "iterations": 8273,
+      "real_time": 8.6559277529295228e+04,
+      "cpu_time": 4.0186415447842439e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/10/1/real_time",
+      "iterations": 1176,
+      "real_time": 6.1102070238095557e+05,
+      "cpu_time": 5.3107729421768687e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/100/1/real_time",
+      "iterations": 105,
+      "real_time": 6.7280141714274483e+06,
+      "cpu_time": 6.0942749428571425e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1000/1/real_time",
+      "iterations": 11,
+      "real_time": 6.6572288818199679e+07,
+      "cpu_time": 6.0943324727272756e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1/10/real_time",
+      "iterations": 7977,
+      "real_time": 8.5746631816467823e+04,
+      "cpu_time": 3.8534469976181535e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/10/10/real_time",
+      "iterations": 1146,
+      "real_time": 5.7167054712033982e+05,
+      "cpu_time": 4.8992051221640490e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/100/10/real_time",
+      "iterations": 100,
+      "real_time": 6.7922836399998236e+06,
+      "cpu_time": 6.1834037599999988e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1000/10/real_time",
+      "iterations": 11,
+      "real_time": 6.7153502545455590e+07,
+      "cpu_time": 6.1721117636363633e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1/100/real_time",
+      "iterations": 7609,
+      "real_time": 9.0911490866065491e+04,
+      "cpu_time": 4.0875867656722316e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/10/100/real_time",
+      "iterations": 1144,
+      "real_time": 6.3714033304201078e+05,
+      "cpu_time": 5.5393598251748225e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/100/100/real_time",
+      "iterations": 104,
+      "real_time": 6.6827486923076464e+06,
+      "cpu_time": 6.0525275192307569e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1000/100/real_time",
+      "iterations": 10,
+      "real_time": 6.6512457999988332e+07,
+      "cpu_time": 6.0900123200000070e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1/1000/real_time",
+      "iterations": 7895,
+      "real_time": 8.7693610006343879e+04,
+      "cpu_time": 3.9404178720709329e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/10/1000/real_time",
+      "iterations": 1104,
+      "real_time": 6.1808638405784348e+05,
+      "cpu_time": 5.3618657427536126e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/100/1000/real_time",
+      "iterations": 103,
+      "real_time": 6.8612306699016653e+06,
+      "cpu_time": 6.1993958446601881e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1000/1000/real_time",
+      "iterations": 11,
+      "real_time": 6.7945751272728473e+07,
+      "cpu_time": 6.1925929909090951e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1/10000/real_time",
+      "iterations": 6348,
+      "real_time": 1.0743639996851503e+05,
+      "cpu_time": 4.2094476685570116e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/10/10000/real_time",
+      "iterations": 1072,
+      "real_time": 6.4357975373125682e+05,
+      "cpu_time": 5.4434636194029846e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/100/10000/real_time",
+      "iterations": 96,
+      "real_time": 7.3497588020832911e+06,
+      "cpu_time": 6.3987539062499991e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1000/10000/real_time",
+      "iterations": 9,
+      "real_time": 7.0128154888885140e+07,
+      "cpu_time": 6.1045429777777828e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1/100000/real_time",
+      "iterations": 3310,
+      "real_time": 2.1055934924470010e+05,
+      "cpu_time": 4.0087808761328903e+04,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/10/100000/real_time",
+      "iterations": 974,
+      "real_time": 7.0291773511284194e+05,
+      "cpu_time": 5.4467603285420826e+05,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/100/100000/real_time",
+      "iterations": 96,
+      "real_time": 7.6052389062510878e+06,
+      "cpu_time": 6.3901573125000149e+06,
+      "time_unit": "ns"
+    },
+    {
+      "name": "std_homogeneous_seq/1000/100000/real_time",
+      "iterations": 11,
+      "real_time": 7.5311078727281705e+07,
+      "cpu_time": 6.2945416090909071e+07,
+      "time_unit": "ns"
+    }
+  ]
+}
