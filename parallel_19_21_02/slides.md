@@ -259,6 +259,12 @@ T get_value()
 ]
 
 ---
+## Pitfalls
+### Dealing with Hardware Complexity
+
+<img src="topo-naples.svg" alt="Machine Topology" class="middletext-float">
+
+---
 
 ## Execution Placement
 ### Basics
@@ -307,7 +313,7 @@ T get_value()
 
 * Derive Memory Allocators
 
-* [Demo Code](code/execution_resource.cpp)
+* [Demo Code](https://github.com/sithhell/talks/blob/master/parallel_19_21_02/code/execution_resource.cpp)
 
 ---
 ## Tying it all together
@@ -323,7 +329,7 @@ T get_value()
 
     &rArr; High-Level abstraction to exploit Low-Level hardware details
 
-* [Demo Code](code/executor.cpp)
+* [Demo Code](https://github.com/sithhell/talks/blob/master/parallel_19_21_02/code/executor.cpp)
 
 ---
 ## Tying it all together
@@ -337,7 +343,7 @@ T get_value()
 
     &rArr; High-Level abstraction to exploit Low-Level hardware details
 
-* [Demo](code/saxpy.cpp) [Code](code/saxpy_numa.cpp)
+* [Demo](https://github.com/sithhell/talks/blob/master/parallel_19_21_02/code/saxpy.cpp) [Code](https://github.com/sithhell/talks/blob/master/parallel_19_21_02/code/saxpy_numa.cpp)
 
 ---
 ## Reducing Overheads
@@ -373,7 +379,7 @@ T get_value()
 
 * Forward progress guarantee*
 
-* [Demo Code](code/tasks.cpp)
+* [Demo Code](https://github.com/sithhell/talks/blob/master/parallel_19_21_02/code/tasks.cpp)
 
 --
 
@@ -423,7 +429,7 @@ T get_value()
 
     &rArr; Powerful execution graphs with fine grain tasks and dataflow execution
 
-* [Demo Code](code/future.cpp)
+* [Demo Code](https://github.com/sithhell/talks/blob/master/parallel_19_21_02/code/future.cpp)
 
 ---
 ## The HPX Runtime System
