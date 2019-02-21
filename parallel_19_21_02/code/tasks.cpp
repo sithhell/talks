@@ -21,33 +21,29 @@ int hpx_main(int argc, char* argv[])
 
     std::size_t num_futures = 1'000'000;
 
-    hpx::future<std::size_t> future
-        = hpx::parallel::execution::async_execute(
-            executors[0],
-            []() -> std::size_t { return 0; });
+    std::vector<hpx::future<std::size_t>> futures;
+    futures.reserve(num_futures);
 
-
-    for (std::size_t i = 1; i != num_futures; ++i)
+    for (std::size_t i = 0; i != num_futures; ++i)
     {
-        future = future.then(
-            executors[i % executors.size()],
-            [i](hpx::future<std::size_t> fut)
-            {
-                return fut.get() + i;
-            });
+        futures.push_back(
+            hpx::parallel::execution::async_execute(
+                executors[i % executors.size()],
+                [](std::size_t i)
+                {
+                    return i;
+                }, i));
     }
 
-//     for (std::size_t i = 1; i != num_futures; ++i)
-//     {
-//         future = hpx::dataflow(
-//             executors[i % executors.size()],
-//             [i](hpx::future<std::size_t> fut)
-//             {
-//                 return fut.get() + i;
-//             }, std::move(future));
-//     }
+    hpx::wait_all(futures);
 
-    std::cout << "Summing up to " << future.get() << "\n";
+    std::size_t sum = 0;
+    for(auto& fut: futures)
+    {
+        sum += fut.get();
+    }
+
+    std::cout << "Summing up to " << sum << "\n";
 
     return hpx::finalize();
 }
