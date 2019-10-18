@@ -58,7 +58,7 @@ Slides: [https://sithhell.github.io/talks/cscs_19_10_18/](.)
     &rArr; Decouple The HPX asynchronous programming model from the runtime
 --
 
-    &rArr; Create Building blocks for heterogeneous Execution of tasks
+    &rArr; Create Building blocks for heterogeneous execution of tasks (Executors)
 
 ---
 class: center, middle
