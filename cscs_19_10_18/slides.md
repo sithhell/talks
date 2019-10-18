@@ -152,12 +152,13 @@ namespace hpx { namespace openmp {
 
     struct agent : hpx::basic_execution::default_agent
     {
+        agent(context const& ctx) : hpx::basic_execution::default_agent(ctx)
+        {}
+
         hpx::openmp::context const& context() const override
         {
             return context_;
         }
-
-        static hpx::openmp::context context_;
     };
 
     void context::post(hpx::util::unique_function_nonser<void()> f) const
@@ -167,8 +168,6 @@ namespace hpx { namespace openmp {
             f();
         }
     }
-
-    hpx::openmp::context agent::context_;
 }}
 ```
 ---
