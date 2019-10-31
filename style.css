@@ -156,6 +156,14 @@ float: right;
     transform: translate(0, -15px);
 }
 
+.logo-img-exasol {
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    width: 13%;
+    transform: translate(0, -9px);
+}
+
 .crop {
     overflow: hidden;
 }
